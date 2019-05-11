@@ -13,7 +13,7 @@ public class TestSpring {
 
         Categlory cat=(Categlory) context.getBean("c");
         System.out.println("asSSSSasa");
-        System.out.println("sdsasd");
+        System.out.println("sdsasd11");
         System.out.println(cat.name);
 
 
