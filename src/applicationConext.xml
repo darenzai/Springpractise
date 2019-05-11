@@ -13,12 +13,25 @@
    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
    http://www.springframework.org/schema/context     
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
-
+<!--
     <bean name="c" class="com.daenzai.entitly.Categlory">
         <property name="name" value="category"/>
     </bean>
+-->
+    <!-- 采用注解的方式注入对象-->
+    <context:annotation-config/>
 
+    <!-- 自动扫描包下路径-->
+    <context:component-scan base-package="com.daenzai.entitly"/>
 
+<!--
 
+    <bean name="p" class="com.daenzai.entitly.Product">
+        <property name="name" value="Product"/>
+        ref 连接C 上面Catglory实体类
+       <property name="catglory" ref="c"/>
+    </bean>
+
+-->
 
 </beans>

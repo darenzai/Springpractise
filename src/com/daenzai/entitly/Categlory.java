@@ -1,10 +1,13 @@
 package com.daenzai.entitly;
 
+import org.springframework.stereotype.Component;
+
+@Component("c") //用注解的方式代替XML配置
 public class Categlory {
 
 
     public int id;
-    public String name;
+    public String name="222";
 
     public int getId() {
         return id;
