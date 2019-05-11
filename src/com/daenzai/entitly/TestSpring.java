@@ -12,7 +12,7 @@ public class TestSpring {
         ApplicationContext context=new ClassPathXmlApplicationContext("applicationConext.xml");
 
         Categlory cat=(Categlory) context.getBean("c");
-        System.out.println("asasa");
+        System.out.println("asSSSSasa");
 
         System.out.println(cat.name);
 
